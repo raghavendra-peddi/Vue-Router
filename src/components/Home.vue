@@ -1,10 +1,10 @@
 <template>
-    <div>
-        <h1>The Home Page</h1>
-        <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab asperiores, aut autem, blanditiis consequuntur
-            dolore excepturi laborum maiores minima nihil non nulla obcaecati quas quibusdam quod sed suscipit vero
-            voluptatem.</p>
-
-    </div>
+  <div>
+    <h1>The Home Page</h1>
+    <hr />
+    <p>
+      This Repo will show some basic router and Vuex concepts with components, further will try to add
+      SASS and I18n Interpolation concepts
+    </p>
+  </div>
 </template>
