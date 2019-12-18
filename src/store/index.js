@@ -6,9 +6,9 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     content: [
-      { name: "Raghavendra", id: "1" },
-      { name: "Divya", id: "2" },
-      { name: "Mahesh", id: "3" }
+      { name: "Sachin", id: "1" },
+      { name: "Ganguly", id: "2" },
+      { name: "Kohli", id: "3" }
     ]
   },
 
