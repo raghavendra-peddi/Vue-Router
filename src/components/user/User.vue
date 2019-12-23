@@ -25,6 +25,21 @@ export default {
     return {
       userNames: this.$store.getters.content
     };
+  },
+  beforeRouteLeave(to, from, next) {
+    let fromEdit = to.fullPath.match(/edit/g);
+    if (fromEdit) {
+      const confirmed = window.confirm(
+        "Are you sure you want to leave? Any unsaved changes will be lost!"
+      );
+      if (confirmed) {
+        next();
+      } else {
+        next(false);
+      }
+    } else {
+      next("/user");
+    }
   }
 };
 </script>

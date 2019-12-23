@@ -15,6 +15,14 @@ export default {
       user: ""
     };
   },
+  beforeRouteLeave(to, from, next) {
+    const confirmed = window.confirm("Are you sure you want change the Value?");
+    if (confirmed) {
+      next();
+    } else {
+      next(false);
+    }
+  },
   mounted() {
     const item = this.userNames.filter(element => {
       return element.id === this.$route.params.id;
